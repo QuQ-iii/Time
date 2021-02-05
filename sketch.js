@@ -92,7 +92,11 @@ async function india() {
 
   fill("white");
   textSize(50)
-  text(hr % 12 + " : " + min + " : " + sec, 40,450);
+  if(hr % 12 === 0){
+    text(12 + " : " + min + " : " + sec, 40,450);
+  }else{
+    text(hr % 12 + " : " + min + " : " + sec, 40,450);
+  }
   text(time, 300,450);
 
   var secAngle = map(sec - 15, 0,60,0,360);
@@ -166,7 +170,11 @@ async function dubai() {
 
   fill("white");
   textSize(50)
-  text(dubai_hr % 12 + " : " + dubai_min + " : " + sec, 40,450);
+  if(dubai_hr % 12 === 0){
+    text(12 + " : " + dubai_min + " : " + sec, 40,450);
+  }else{
+    text(dubai_hr % 12 + " : " + dubai_min + " : " + sec, 40,450);
+  }
   text(time, 300,450);
 
   var secAngle = map(sec - 15, 0,60,0,360);
@@ -243,7 +251,11 @@ async function america() {
 
   fill("white");
   textSize(50)
-  text(america_hr % 12 + " : " + america_min + " : " + sec, 40,450);
+  if(america_hr % 12 === 0){
+    text(12 + " : " + america_min + " : " + sec, 40,450);
+  }else{
+    text(america_hr % 12 + " : " + america_min + " : " + sec, 40,450);
+  }
   text(time, 300,450);
 
   //Second hand
@@ -316,7 +328,11 @@ async function australia() {
   
   fill("white");
   textSize(50)
-  text(australia_hr % 12 + " : " + australia_min + " : " + sec, 40,450);
+  if(australia_hr % 12 === 0){
+    text(12 + " : " + australia_min + " : " + sec, 40,450);
+  }else{
+    text(australia_hr % 12 + " : " + australia_min + " : " + sec, 40,450);
+  }
   text(time, 300,450);
 
   var secAngle = map(sec - 15, 0,60,0,360);
